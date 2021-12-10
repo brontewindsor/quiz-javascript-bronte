@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--required meta--> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Custom css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="quizarea">
+        <div id="title" >
+          <div class="col">
+            <h1 class="text-center">Where should you travel to next?</h1>
+            <br />
+            
+          </div>
+        </div>
+        <div id="questionarea">
+
+            <div id="main_image" class="main_image">
+            
+              <img src="./images/vacationtypes.jpg" width="500px">
+
+            </div>
+        
+            <!--intro content-->
+            <div id="intro" class="justify-content-center mx-auto">
+              <h2 class="text-center">Take the quiz to find out your ideal vacation destination</h2>
+              <br /><br />
+            
+              <input type="button" value="Take Quiz!"class="btn" onclick="startQuiz()"/>
+            </div>
+            <form id="quizform">
+            <!--question 1-->
+            <div id="question1" class="mx-auto">
+              <div class="row justify-content-center" >
+                  <h2 class="text-center">Your perfect afternoon involves?</h2>
+              </div>
+              <div class="row">
+                &nbsp;
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest1" id="a1" value=1 />
+                <label for="a1" class="text-center">enjoying wine and cheese in a charming city</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest1" id="a2" value=2 />
+                <label for="a2">climbing the steps to a beautiful landmark</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest1" id="a3" value=3  />
+                <label for="a3">soaking in a natural spa</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest1" id="a4" value=4 />
+                <label for="a4" class="text-center">snorkling to see tropical fish</label>
+              </div>
+              <div class="row" class="justify-content-center">
+                  <div class="col">
+                      <input type="button" value="Next"class="btn" onclick="question2()"/>
+                    </div>
+              </div>
+            </div>
+
+            <!--question 2-->
+            <div id="question2" class="mx-auto">
+              <div class="row justify-content-center">
+                  <h2 class="text-center">How would you describe your perfect evening?</h2>
+              </div>
+              <div class="row">
+                &nbsp;
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest2" id="a1" value=1 />
+                <label for="a1" class="text-center">listening to live music in a cosy bar</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest2" id="a2" value=2 />
+                <label for="a2">trying local food at a night market </label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest2" id="a2" value=3 />
+                <label for="a3">laying under the Northern Lights</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest2" id="a2" value=4 />
+                <label for="a4">taking a sunset stroll on the beach</label>
+              </div>
+              <div class="row" class="justify-content-center">
+                <div class="col">
+                <input type="button" value="Next"class="btn" onclick="question3()"/>
+              </div>
+            </div>
+          </div>
+
+            <!--question 3-->
+            <div id="question3">
+             <div class="row justify-content-center">
+              <h2 class="text-center">Which meal would you order?</h2>
+             </div>
+               <div class="row">
+                &nbsp;
+               </div>
+                 <div class="row justify-content-center">
+                   <input type="radio" name="quest3" id="a1" value=1 />
+                     <label for="a1" class="text-center">a wooden platter with meats, cheeses, and fruits</label>
+                       </div>
+             <div class="row justify-content-center">
+    <input type="radio" name="quest3" id="a2" value=2 />
+    <label for="a2">traditional food served by locals</label>
+  </div>
+  <div class="row justify-content-center">
+    <input type="radio" name="quest3" id="a3" value=3 />
+    <label for="a3">a fresh seafood dinner</label>
+  </div>
+  <div class="row justify-content-center">
+    <input type="radio" name="quest3" id="a4" value=4 />
+    <label for="a4">oysters and champagne</label>
+  </div>
+  <div class="row" class="justify-content-center">
+    <div class="col">
+    <input type="button" value="Next"class="btn" onclick="question4()"/>
+  </div>
+</div></div>
+
+
+
+
+
+
+
+<!--question 4-->
+<div id="question4">
+    <div class="row justify-content-center">
+        <h2 class="text-center">What is your preferred mode of transport?</h2>
+    </div>
+    <div class="row">
+      &nbsp;
+    </div>
+    <div class="row justify-content-center">
+      <input type="radio" name="quest4" id="a1" value=1 />
+      <label for="a1" class="text-center">riding on a vespa through the city</label>
+    </div>
+    <div class="row justify-content-center">
+      <input type="radio" name="quest4" id="a2" value=2 />
+      <label for="a2">by tuk-tuk through busy streets</label>
+    </div>
+    <div class="row justify-content-center">
+      <input type="radio" name="quest4" id="a3" value=3 />
+      <label for="a3">by car, taking in the beautiful sights</label>
+    </div>
+    <div class="row justify-content-center">
+      <input type="radio" name="quest4" id="a2" value=4 />
+      <label for="a4">by sailboat through the ocean</label>
+    </div>
+    <div class="row" class="justify-content-center">
+      <div class="col">
+      <input type="button" value="Next"class="btn" onclick="question5()"/>
+    </div>
+  </div></div>
+
+  <!--question 5-->
+<div id="question5">
+    <div class="row justify-content-center">
+        <h2 class="text-center">Where would you prefer to sleep?</h2>
+    </div>
+    <div class="row">
+      &nbsp;
+    </div>
+    <div class="row justify-content-center">
+      <input type="radio" name="quest5" id="a1" value=1 />
+      <label for="a1" class="text-center">in a hotel with a balcony overlooking the city lights</label>
+    </div>
+    <div class="row justify-content-center">
+      <input type="radio" name="quest5" id="a2" value=2 />
+      <label for="a2">a hut on the beach</label>
+    </div>
+    <div class="row justify-content-center">
+      <input type="radio" name="quest5" id="a3" value=3 />
+      <label for="a3">in a glass igloo watching the stars</label>
+    </div>
+    <div class="row justify-content-center">
+      <input type="radio" name="quest5" id="a4" value=4 />
+      <label for="a4">in a water bungalow over crystal clear waters</label>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col">
+        <input type="button" value="Results"class="btn" onclick="results()"/>
+      </div>
+    </div></div>
+</form>
+
+
+
+
+            <!--Results-->
+            <div id="results" class="justify-content-center mx-auto">
+              <!--<div id="paris_image" class="paris_image">
+                <img src="./images/paris.webp">
+              </div>
+              <div id="sea_image" class="sea_image">
+                <img src="./images/southeastasia.jpg">
+              </div>
+              <div id="iceland_image" class="iceland_image">
+                <img src="./images/iceland.jpg">
+              </div>
+              <div id="maldives_image" class="maldives_image">
+                <img src="./images/maldives.jpg">
+              </div>-->
+      
+              <h2 class="text-center">Your perfection destination is:</h2>
+              <br /><br />
+              <p class="text-center" id="result"></p>
+            </div>
+
+
+
+        </div>
+      </div>
+    </div>
+    <!-- link to external JavaScript-->
+    <script src="./javascript.js" type="text/javascript"></script>
+  </body>
+</html>

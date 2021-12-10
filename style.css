@@ -1,0 +1,38 @@
+body {
+  background-color: #eecbcb;
+  text-align: center;
+}
+.text-center {
+  color: #fff;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #fff;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+#question1,
+#question2,
+#question3,
+#question4,
+#question5,
+#results {
+  color: #fff;
+  display: none;
+  width: 750px;
+}
+
+#quizarea {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 400px;
+  width: 800px;
+  background-color: #eecbcb;
+  border-radius: 3px;
+}
