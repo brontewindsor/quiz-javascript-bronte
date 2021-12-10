@@ -90,33 +90,34 @@ function calculateResults() {
   }  
   const radios5 = document.querySelectorAll('input[name="quest5"]');
   let q5Value;
-  for (const rb of radios2) {
+  for (const rb of radios5) {
       if (rb.checked) {
         q5Value = rb.value;
         break;
       }
     }
     
-    function numericalCalculation() {
+    // function numericalCalculation() {
       let total = Number(q1Value) + Number(q2Value) + Number(q3Value) + Number(q4Value) + Number(q5Value);
       result = total;
 
       
       if (result < 6 ) {
-        msg = "Paris";
+        msg = "Paris!";
 
       }
       else if (result < 11 ) {
-        msg = "Southeast Asia";
+        msg = "Southeast Asia!";
       }
       else if (result < 16 ) {
-        msg = "Iceland";
+        msg = "Iceland!";
       }
       else {
-        msg = "Maldives";
+        msg = "The Maldives!";
       }
 
-  numericalCalculation() 
+  // numericalCalculation() 
   document.getElementById("result").innerHTML = msg
     }
-}
+  
+
